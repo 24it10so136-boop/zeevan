@@ -1,0 +1,1 @@
+"""Zeevan local FastAPI application."""

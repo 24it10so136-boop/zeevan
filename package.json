@@ -1,0 +1,15 @@
+{
+  "name": "zeevan-local",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Zeevan local full-stack health companion",
+  "scripts": {
+    "install:frontend": "npm --prefix frontend install",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:frontend": "npm --prefix frontend run build",
+    "build": "npm --prefix frontend ci && npm --prefix frontend run build",
+    "start": "python backend/run.py",
+    "test:backend": "cd backend && pytest -q",
+    "train:model": "cd backend && python -m app.ml.train"
+  }
+}
