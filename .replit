@@ -1,5 +1,5 @@
 entrypoint = "README.md"
-run = "python backend/run.py"
+run = "npm --prefix frontend ci && npm --prefix frontend run build && python -m pip install --no-cache-dir -r backend/requirements.txt && python backend/run.py"
 
 [nix]
 channel = "stable-24_11"
