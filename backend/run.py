@@ -1,4 +1,4 @@
-"""Run Zeevan on the port supplied by Replit or the local environment."""
+"""Run Zeevan on the port supplied by Render or the local environment."""
 
 import os
 import sys
